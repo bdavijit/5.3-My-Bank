@@ -21,6 +21,8 @@ function AddDeposit() {
 
   Total.innerHTML = TAmount;
   Deposit.innerHTML = TDAmount;
+
+  Deposit_Amount.value = "";
 }
 function SubWithdraw() {
   let TWAmount = parseInt(Withdraw.innerHTML);
@@ -32,4 +34,5 @@ function SubWithdraw() {
 
   Total.innerHTML = TAmount;
   Withdraw.innerHTML = TWAmount;
+  Withdraw_Amount.value = "";
 }
