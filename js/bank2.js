@@ -36,8 +36,8 @@ function AddDeposit() {
 }
 function SubWithdraw() {
   let newWithdraw = GetData("Withdraw_Amount", true);
-  Withdraw.innerText = GetData("Withdraw", false) + newWithdraw;
-  Total.innerText = GetData("Total", false) - newWithdraw;
+  Withdraw.innerText = (GetData("Withdraw", false) + newWithdraw).toFixed(2);
+  Total.innerText =( GetData("Total", false) - newWithdraw).toFixed(2);
 
   Withdraw_Amount.value = "";
 }
